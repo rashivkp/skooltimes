@@ -1,0 +1,781 @@
+@charset "utf-8";
+div {
+display:block;
+}
+.wrapper {
+position:relative;
+width:988px;
+margin : 5px auto;
+box-shadow: black 0.2em 0.2em 0.6em;
+background: -webkit-gradient(linear,left top,right top,from(#D4D4D4),to(gray));
+background-image:url('../images/bak.jpg');
+border:black;
+display: block;
+overflow: hidden;
+padding: 40px 0;
+white-space:wrap;
+border-radius:  0px 0px 10px 10px;
+-webkit-border-bottom-left-radius: 10px;
+-webkit-border-bottom-right-radius: 10px;
+}
+#menu {
+border-left:solid #302416;
+}
+.msg {
+display:block;
+color:yellow;
+min-height:25px;
+background: -webkit-gradient(linear,left top,right top,from(gray),to(#D4D4D4));
+box-shadow: black 0.2em 0.2em 0.6em;
+}
+.msg a{
+color:yellow;
+}
+.header {
+color:white;
+float: left;
+background: #302416;
+padding: 5px;
+min-height: 110px;
+width:100%;
+-moz-border-radius: 15px;
+-webkit-border-radius: 15px;
+border-radius: 5px;
+border-top: 1px solid #CCC;
+
+height:100px;
+}
+.header .photo img{
+z-index:8;
+}
+.header .details {
+margin:5px;
+z-index:8;
+color:white;
+}
+.header .details td{
+color:white;
+}
+.content
+{
+width: 760px;
+margin: 0 auto;
+text-align: left;
+position: relative;
+}
+.leftbar {
+float:left;
+width:20%;
+background: -webkit-gradient(linear,left top,right top,from(gray),to(#D4D4D4));
+}
+.leftbar .CollapsiblePanelContent  a{
+margin-left:2px;
+white-space:nowrap;
+text-transform: lowercase;
+text-shadow: 0px 1px 1px black;
+color:white;
+float:left;
+}
+.rightbar {
+
+float:left;
+width:80%;
+display: block;
+}
+.footer {
+clear:both;
+padding: 30px 0;
+text-align:center;
+}
+.footer ul{
+list-style:none;
+}
+.footer a {
+color:#fff;
+color: white;
+font-family: 'LaneNarrowRegular';
+font-size: 15px;
+}
+.footer li{
+	display: inline;
+	border-left: 1px solid #CCC;
+	margin-right: 5px;
+	padding-left: 7px;
+	}
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+/*defines the top bar of the every page */
+		.wholebarholder {
+			margin: 0;
+			padding: 10px 10px;
+			background: url('../images/topnavbar.png');
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			height: 25px;
+			z-index: 90;
+			-webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, .25);
+			-moz-box-shadow: 0 2px 3px rgba(0, 0, 0, .25);
+			box-shadow: 0 2px 3px rgba(0, 0, 0, .25);
+			}
+		.three {
+			width: 960px;
+			margin: 0 auto;
+			text-align: left;
+			position: relative;
+			color :#fff;	
+		}
+		.saveDialog {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		margin-left: -230px;
+		margin-top: -220px;
+		z-index: 10;
+		display: none;
+		background: rgba(0, 0, 0, 0.5);
+		border-radius: 3px;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		}
+		.saveDialog, .savePage {
+		font-size: 12px;
+		color: black;
+		width: 480px;
+		}
+		.saveBody {
+		position: relative;
+		top: 0;
+		left: 0;
+		z-index: 1;
+		display: block;
+		padding: 1px 0;
+		}
+		.clear {
+		clear: both;
+		display: block;
+		overflow: hidden;
+		visibility: hidden;
+		width: 0;
+		height: 0;
+		}
+		#welcome {			
+			position:relative;
+			float:left;
+		}
+		#search {
+			position:relative;
+			left:20%;
+			float:left;
+			padding-right:20%;
+		}
+		#signout {
+			position:relative;
+			float: right;			
+		}
+		#signout a{
+			color :#fff;			
+		}
+		/*end*/
+		
+			ul.lstnone {
+			list-style:none;
+			}
+		
+/*defines the boxes of the replys and comments */		
+			.post_author {
+			width: 15%;
+float:left;
+font: 12px "myriad-pro-1","myriad-pro-2","Lucida Grande",Sans-Serif;
+			
+			}
+			.post_content {
+			width: 80%;
+			float: left;
+			background: #E8E8E8;
+			padding: 15px;
+			min-height: 100px;
+			overflow: hidden;
+			position: relative;
+			-moz-border-radius: 15px;
+			-webkit-border-radius: 15px;
+			border-radius: 15px;
+			border-top: 1px solid #CCC;
+			z-index: 2;
+			}
+			.reply_author {
+			width: 15%;
+float:right;
+font: 12px "myriad-pro-1","myriad-pro-2","Lucida Grande",Sans-Serif;
+			
+			}
+			ul.post {
+			list-style:none;
+			}
+			ul.post li{
+			margin: 20px auto;
+			text-align: left;
+			direction: ltr;
+			overflow: auto;
+			white-space:wrap;
+			}
+			ul.post li li{
+			margin: 0;
+			border:0;
+			white-space:wrap;
+			}
+			ul.post img{
+			float:left;
+			}
+			ul.comments {
+			clear:both;
+			list-style:none;
+			margin-left: 30px;
+			padding: 20px;
+			}
+			.newreply {
+			display: none;
+			}
+			#new_post {
+				display: none;
+				}
+			.posted_user {
+			color:blue;
+			}
+			
+		/*end */
+		
+/* nav menu defenitions, this menu used in many pages*/
+			ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+				padding: 0;
+				margin: 0;
+			}
+			h1, h2, h3, h4, h5, h6, p {
+				margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+				padding-right: 15px;
+				padding-left: 15px;
+				padding-top: 0px;
+			}
+			.menu {
+			
+			}
+			ul.nav {
+				position:relative;
+				padding:0px;
+				list-style: none; /* this removes the list marker */
+				/*border-top: 1px solid #666; /* this creates the top border for the links - all others are placed using a bottom border on the LI */
+			}
+			ul.nav li {
+				text-align:center;
+background: -moz-linear-gradient(left,#CDE4F7,white);
+background: -webkit-gradient(linear,left top,right top,from(#CDE4F7),to(white));
+border: solid 1px #9ACCF7;
+border-left: none;
+border-radius: 10px;
+border-top-left-radius: 0;
+border-bottom-left-radius: 0;
+-moz-border-radius: 10px;
+-moz-border-radius-bottomleft: 10px;
+-moz-border-radius-topleft: 10px;
+-webkit-border-radius: 10px;
+-webkit-border-top-left-radius: 0px;
+-webkit-border-bottom-left-radius: 0px;
+box-shadow: 2px 2px 3px #9DBBD0;
+-moz-box-shadow: 2px 2px 3px #9DBBD0;
+-webkit-box-shadow: 2px 2px 3px #9DBBD0;
+list-style: none;
+margin: 7px 0 0;
+			}
+			
+			ul.nav a, ul.nav a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
+				color: #447BC4;
+				display: block; /* this gives the link block properties causing it to fill the whole LI containing it. This causes the entire area to react to a mouse click. */
+				width: 160px;  /*this width makes the entire button clickable for IE6. If you don't need to support IE6, it can be removed. Calculate the proper width by subtracting the padding on this link from the width of your sidebar container. */
+				text-decoration: none;
+				padding-top: 5px;
+				padding-right: 5px;
+				padding-bottom: 5px;
+				padding-left: 5px;
+				list-style-type: none;
+			}
+
+			ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+				background: -webkit-gradient(linear,left top,right top,from(white),to(#CDE4F7));
+				text-decoration:underline;
+				-moz-border-radius: 10px;
+-moz-border-radius-bottomleft: 10px;
+-moz-border-radius-topleft: 10px;
+-webkit-border-radius: 10px;
+-webkit-border-top-left-radius: 0px;
+-webkit-border-bottom-left-radius: 0px;
+			}
+			ul.sub_menu {
+				position:absolute;
+				z-index:1000;
+				padding:0px;
+			}
+			.nav ul.sub_menu li {
+				list-style-type: none;
+				float: none;
+				display: none;
+			}
+			li:hover ul.sub_menu li {
+				display: block;
+			}
+			
+
+
+/*end menu dfntn*/	
+
+
+
+
+
+/* main menu defenitions, this menu used in many pages*/
+			
+			ul.main {
+				position:relative;
+				padding:0px;
+				list-style: none; /* this removes the list marker */
+				/*border-top: 1px solid #666; /* this creates the top border for the links - all others are placed using a bottom border on the LI */
+			}
+			ul.main li {
+				position:inline;
+				float:left;
+				text-align:center;
+			}
+			
+			ul.main a, ul.main a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
+				color: #447BC4;
+				display: block; /* this gives the link block properties causing it to fill the whole LI containing it. This causes the entire area to react to a mouse click. */
+				width: 125px;  /*this width makes the entire button clickable for IE6. If you don't need to support IE6, it can be removed. Calculate the proper width by subtracting the padding on this link from the width of your sidebar container. */
+				text-decoration: none;
+				padding-top: 5px;
+				padding-right: 5px;
+				padding-bottom: 5px;
+				padding-left: 5px;
+				text-shadow: 0px 1px .05em black;
+				
+			}
+
+			ul.main a:hover, ul.main a:active, ul.main a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+				background: -webkit-gradient(linear,left top,right top,from(white),to(#CDE4F7));
+				-moz-border-radius: 10px;
+-moz-border-radius-bottomleft: 10px;
+-moz-border-radius-topleft: 10px;
+-webkit-border-radius: 10px;
+-webkit-border-top-left-radius: 10px;
+-webkit-border-bottom-left-radius: 10px;
+			}
+			ul.main ul.sub_menu {
+				position:absolute;
+				z-index:1000;
+				padding:0px;
+			}
+			ul.main ul.sub_menu li {
+				list-style-type: none;
+				float: none;
+				display: none;
+			}
+			li:hover ul.sub_menu li {
+				display: block;
+			}
+			
+
+
+/*end menu dfntn*/	
+
+
+
+/* posts works style*/	
+#class_sub_choice
+{
+list-style-type: none;
+margin-top:15px;
+}
+#class_sub_choice li{
+	
+	float: left;
+}
+#class_sub_choice li a{
+
+color: white;
+display: block;
+text-shadow: 1px 1px 1px #3C4F0F;
+font-size: 16px;
+text-transform: uppercase;
+font-weight: bold;
+line-height: 13px;
+padding: 13px 15px 6px;
+}
+	
+#class_sub_choice .active_opt
+{
+	-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+	background: #667F27;
+	display: block;
+text-shadow: 1px 1px 1px #3C4F0F;
+font-size: 16px;
+text-transform: uppercase;
+font-weight: bold;
+line-height: 13px;
+padding: 13px 15px 6px;
+}
+#class_sub_choice li:hover a{
+	-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+	background: #667F27;
+	display: block;
+text-shadow: 1px 1px 1px #3C4F0F;
+font-size: 16px;
+text-transform: uppercase;
+font-weight: bold;
+line-height: 13px;
+padding: 13px 15px 6px;
+}
+
+/*ends*/
+
+/* noticeboard defntns*/	
+
+			
+			.noticeboard .posts {
+			margin: 10px 0;
+			}
+			.noticeboard .nbcaption {color: #232332;
+				font-family: "calluna-1", "calluna-2", serif;
+				font-size: 26px;
+				font-weight: bold;
+				margin-left: 1.8518518518519%;
+				-webkit-text-shadow: 0px 2px 1px white;
+				-moz-text-shadow: 0px 2px 1px white;
+				text-shadow: 0px 2px 1px white;
+				}
+			.noticeboard .notice {
+			color: #0F0F0F;
+			font-size: 14px;
+			hypens: auto;
+			line-height: 24px;
+			margin-bottom: 15px;
+			text-rendering: optimizeLegibility;
+			
+			}
+			.noticeboard .dat {
+			color:red;
+			}
+
+/*ends*/
+
+/* library defntns*/	
+
+			.lib {
+						}
+			.lib .libitem {position: relative;
+margin: 30px 0 20px;
+padding: 0 15px;
+background-color: white;
+border: 1px solid #EEE;
+-moz-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-goog-ms-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-moz-border-radius: 0;
+-webkit-border-radius: 0;
+-goog-ms-border-radius: 0;
+border-radius: 0;
+			}
+			.lib .book {
+			font: normal bold 22px 'Trebuchet MS', Trebuchet, sans-serif;
+color: #444;
+			
+			}
+			.lib .comment .comment_title {
+			color: #AEAEAE;
+font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+			font-size:20px;
+			}
+			.lib .author .author_title {
+			color: #AEAEAE;
+font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+			font-size:20px;
+			
+			}
+		
+/*ends*/
+
+.avatar {
+border-radius: 42px;
+position: relative;
+z-index: 1;
+}
+.avatar-wrap {
+width: 68px;
+height: 68px;
+border-radius: 42px;
+position: relative;
+border: 8px solid #E8E8E8;
+margin: 0 0 22px 0;
+}
+h4.subhead {
+	
+	margin: 0px;
+	margin-bottom:25px;
+	color: #fff; 
+	display: block;
+	height:25px;
+	padding-top:2px;
+	font-size:24px;
+	border-radius: 0em 0em 1em 0em;
+	background-color: #36291C;
+	border-bottom: 2px solid #FBB917;
+	box-shadow: black 0.0em 0.2em 0.5em;
+	
+}
+
+body {
+margin: 0;
+background: url('../images/background3.jpg'); 
+background-position:fixed;
+}
+
+a {
+	text-decoration: none;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+	color:red;
+}
+
+.sidebar 
+{
+float:left;
+}
+
+input[type="text"] {
+width: 203px;
+height: 29px;
+line-height: 29px;
+font: 12px/29px Tahoma, Geneva, sans-serif;
+color: white;
+padding: 0 5px;
+border: none;
+background: #4E4C44;
+margin: 0 0 6px;
+}
+input[type="password"] {
+width: 203px;
+height: 29px;
+line-height: 29px;
+font: 12px/29px Tahoma, Geneva, sans-serif;
+color: white;
+padding: 0 5px;
+border: none;
+background: #4E4C44;
+margin: 0 0 6px;
+}
+/*
+input[type="submit"] {
+width: 203px;
+height: 29px;
+line-height: 29px;
+font: 12px/29px Tahoma, Geneva, sans-serif;
+color: white;
+padding: 0 5px;
+border: none;
+background: #4E4C34;
+margin: 0 0 6px;
+}*/
+input, textarea, select {
+font-family: inherit;
+font-size: inherit;
+font-weight: inherit;
+}
+#error {
+color: white;
+}
+
+/*defining the message boxes at messages*/
+				.badge {
+				color:white;
+				background: #2E3238;
+				margin-top: 20px;
+				margin-left: 60px;
+				position: relative;
+				border: 1px solid #222;
+				border-radius: 1em;
+				padding-bottom: 5px;
+				}
+				.recepient img {
+				position: absolute;
+				z-index: 9;
+				left: -60px;
+				}
+
+				.user img {
+				position: absolute;
+				z-index: 9;
+				right: -60px;
+				}
+
+				.user {
+				left: -60px;
+				}
+				.badge h5 {
+				font-size: 18px;
+				padding-left: 10px;
+				border-bottom: 1px solid #8CAB63;
+				}
+				.badge p {
+				margin-bottom: 8px;
+				margin-top: 8px;
+				padding-left: 10px;
+				padding-right: 10px;
+				font-size: 16px;
+				}
+
+				ul.message {
+				list-style:none;
+				}
+/* ends */
+
+
+/* defining the subject works style */
+		ul.subj_works {
+		list-style:none;
+		}
+		ul.subj_works .workitem {
+		margin-bottom:50px;}
+		
+		ul.subj_works .workitem .caption img{
+		float:left;
+		margin-right:15px;
+		}
+		ul.subj_works .workitem .caption{
+		float:left;
+		font-family: Constantia,Georgia,Times New Roman,serif;
+font-size: 18px;
+font-weight: bolder;
+width:90%;
+		}
+		.subj_works  .last_date {
+color: white;
+float:left;
+font-size: 15px;
+margin-left:10px;
+		}
+		.subj_works .post_date {
+		float:right;
+color: white;
+font-size: 15px;
+margin-left:10px;
+		}
+		
+/* ends */
+
+
+
+/* defining the users list style */
+		ul.users_list  {
+		list-style:none;
+		}
+		
+		.useritm {
+		margin:10px;
+		width: 80%;
+			float: left;
+			background: #E8E8E8;
+			padding: 5px;
+			min-height: 50px;
+			overflow: hidden;
+			position: relative;
+			-moz-border-radius: 15px;
+			-webkit-border-radius: 15px;
+			border-radius: 60px;
+			border-top: 1px solid #CCC;
+			z-index: 2;
+		}
+		.useritm .name {
+		position: absolute;
+top: 36px;
+margin-left: 115px;
+		}
+		.useritm .avatar {
+		float:left;
+
+}
+useritm .avatar-wrap {
+width: 68px;
+height: 68px;
+border-radius: 61px;
+position: relative;
+border: 8px solid #E8E8E8;
+margin:0 0 3px 0;
+}
+/* ends */
+
+
+.CollapsiblePanel {
+	margin: 0px;
+	padding: 0px;
+	border-left: solid 1px #CCC;
+	border-right: solid 1px #999;
+	border-top: solid 1px #999;
+	border-bottom: solid 1px #CCC;
+}
+.CollapsiblePanelTab {
+	font: bold 0.9em sans-serif;
+	background-color: #DDD;
+	border-bottom: solid 1px #CCC;
+	margin: 0px;
+	padding: 2px;
+	cursor: pointer;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+}
+.college .caption {
+font: bold 0.9em sans-serif;
+	background-color: #DDD;
+	border-bottom: solid 1px #CCC;
+	margin: 0px;
+	padding: 2px;
+	}
+.class_details {
+background:white;
+width:100%;
+min-height:225px
+}
+.class_details h4.subhead{
+margin-bottom:0
+}
+.class_details img{
+float:left;
+}
+.class_details .desc_class{
+min-height:200px;
+float:left;
+display:block;
+font-weight:bold;
+color:gray;
+
+background: -webkit-gradient(linear,left top,right top,from(white),to(#D4D4D4));
+box-shadow: 0;
+}

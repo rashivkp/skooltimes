@@ -1,0 +1,7 @@
+#Prevent directory listing
+Options -Indexes
+#Prevent images from being viewed
+<Files *>
+deny from all
+</Files>
+
